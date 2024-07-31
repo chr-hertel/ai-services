@@ -1,0 +1,31 @@
+#!/usr/bin/env php
+<?php
+
+use Psr\Log\LoggerAwareInterface;
+use Stoffel\AzureAi\AiVision;
+use Stoffel\AzureAi\AiVision\Client;
+use Stoffel\AzureAi\AiVision\Parser;
+use Stoffel\AzureAi\Command\AiVisionCommand;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Logger\ConsoleLogger;
+use Symfony\Component\Console\Output\ConsoleOutput;
+use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Component\HttpClient\HttpClient;
+
+require __DIR__ . '/vendor/autoload.php';
+
+(new Dotenv())->loadEnv(__DIR__.'/.env');
+$dataPath = __DIR__ . '/data';
+
+$output = new ConsoleOutput();
+$httpClient = HttpClient::create();
+if ($httpClient instanceof LoggerAwareInterface) {
+    $httpClient->setLogger(new ConsoleLogger($output));
+}
+$client = new Client($httpClient, $_ENV['COGNITIVE_SERVICES_ENDPOINT'], $_ENV['COGNITIVE_SERVICES_KEY']);
+$aiVision = new AiVision($client, new Parser());
+
+$app = new Application('Azure AI Services Examples');
+$app->add(new AiVisionCommand($aiVision, $dataPath));
+
+$app->run(output: $output);

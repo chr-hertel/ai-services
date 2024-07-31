@@ -1,0 +1,25 @@
+{
+    "name": "stoffel/azure-ai",
+    "description": "Azure AI Services Examples in PHP",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "symfony/http-client": "^7.1",
+        "symfony/console": "^7.1",
+        "symfony/dotenv": "^7.1",
+        "symfony/finder": "^7.1",
+        "symfony/var-dumper": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stoffel\\AzureAi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christopher Hertel",
+            "email": "mail@christopher-hertel.de"
+        }
+    ]
+}
