@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0415321/" }, "author": { "@type": "Person", "name": "Oogieone" }, "dateCreated": "2006-02-02", "inLanguage": "English", "name": "Very Funny!", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "10" } }

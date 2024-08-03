@@ -2,30 +2,52 @@
 <?php
 
 use Psr\Log\LoggerAwareInterface;
-use Stoffel\AzureAi\AiVision;
-use Stoffel\AzureAi\AiVision\Client;
-use Stoffel\AzureAi\AiVision\Parser;
+use Stoffel\AzureAi\CognitiveServices\AiVision;
+use Stoffel\AzureAi\CognitiveServices\AiVisionResultParser;
+use Stoffel\AzureAi\CognitiveServices\SentimentAnalysis;
+use Stoffel\AzureAi\CognitiveServices\SentimentAnalysisResultParser;
 use Stoffel\AzureAi\Command\AiVisionCommand;
+use Stoffel\AzureAi\Command\SentimentAnalysisCommand;
+use Stoffel\AzureAi\Command\TextClassification;
+use Stoffel\AzureAi\TextClassification\ReviewDownloader;
+use Stoffel\AzureAi\TextClassification\ReviewExtractor;
+use Stoffel\AzureAi\TextClassification\ReviewTransformer;
+use Stoffel\AzureAi\TextClassification\Tester;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpClient\HttpClient;
 
-require __DIR__ . '/vendor/autoload.php';
-
+// Bootstrapping
+require __DIR__.'/vendor/autoload.php';
 (new Dotenv())->loadEnv(__DIR__.'/.env');
-$dataPath = __DIR__ . '/data';
 
+// Infrastructure
+$dataPath = __DIR__.'/data';
 $output = new ConsoleOutput();
+$logger = new ConsoleLogger($output);
+$filesystem = new Filesystem();
 $httpClient = HttpClient::create();
 if ($httpClient instanceof LoggerAwareInterface) {
-    $httpClient->setLogger(new ConsoleLogger($output));
+    $httpClient->setLogger($logger);
 }
-$client = new Client($httpClient, $_ENV['COGNITIVE_SERVICES_ENDPOINT'], $_ENV['COGNITIVE_SERVICES_KEY']);
-$aiVision = new AiVision($client, new Parser());
 
+// Cognitive Services
+$aiVision = new AiVision($filesystem, $httpClient, new AiVisionResultParser(), $_ENV['COGNITIVE_SERVICES_ENDPOINT'], $_ENV['COGNITIVE_SERVICES_KEY']);
+$sentimentAnalysis = new SentimentAnalysis($filesystem, $httpClient, new SentimentAnalysisResultParser(), $_ENV['COGNITIVE_SERVICES_ENDPOINT'], $_ENV['COGNITIVE_SERVICES_KEY']);
+
+// Text Classification
+$downloader = new ReviewDownloader($httpClient, $filesystem, new ReviewExtractor(), $logger, $dataPath);
+$transformer = new ReviewTransformer($filesystem, $dataPath, $_ENV['TEXT_CLASSIFICATION_PROJECT'], $_ENV['TEXT_CLASSIFICATION_CONTAINER']);
+$tester = new Tester($httpClient, $_ENV['TEXT_CLASSIFICATION_ENDPOINT'], $_ENV['TEXT_CLASSIFICATION_KEY'], $_ENV['TEXT_CLASSIFICATION_PROJECT'], $_ENV['TEXT_CLASSIFICATION_DEPLOYMENT']);
+
+// Application
 $app = new Application('Azure AI Services Examples');
 $app->add(new AiVisionCommand($aiVision, $dataPath));
-
+$app->add(new SentimentAnalysisCommand($sentimentAnalysis, $dataPath));
+$app->add(new TextClassification\DownloadCommand($downloader));
+$app->add(new TextClassification\TransformCommand($transformer));
+$app->add(new TextClassification\TesterCommand($tester));
 $app->run(output: $output);

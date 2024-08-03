@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0376541/" }, "author": { "@type": "Person", "name": "azimuth361" }, "dateCreated": "2007-01-16", "inLanguage": "English", "name": "No Virtue", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "5" } }

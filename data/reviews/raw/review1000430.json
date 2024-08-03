@@ -1,0 +1,22 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "CreativeWork",
+    "url": "https://www.imdb.com/title/tt0357277/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "topdogwoof69"
+  },
+  "dateCreated": "2005-01-16",
+  "inLanguage": "English",
+  "name": "5 stars, I know it\u0027s early but so far the best movie of 2005",
+  "reviewBody": "I went with a certain amount of trepidation, but I came out of this movie impressed with the way the story was told. Jennifer Garner is gorgeous and the villains were wonderful. Elektra is an anti-hero (a person who kills people, not saves them; but soon chooses a better path), so expect a lot of violence and action. The refreshing thing is that there is real dialog and real depth also in this surprising film. I recommend this movie to anyone who has got an imagination, a taste in movies, an action movie lover or a Marvel fan. Bottom line - go see this because you will not be disappointed. It is a fun action movie with a good story.\n\nFinally, a movie that was worth the admission fee. This is an action fan\u0027s dream that will keep you on the edge of your seat, while delivering an actual plot. 5 stars, I know it\u0027s early but so far the best movie of 2005.",
+  "reviewRating": {
+    "@type": "Rating",
+    "worstRating": "1",
+    "bestRating": "10",
+    "ratingValue": "10"
+  }
+}

@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0595343/" }, "author": { "@type": "Person", "name": "theowinthrop" }, "dateCreated": "2008-07-20", "inLanguage": "English", "name": "Monroe in Paris (1794 - 1797)" }

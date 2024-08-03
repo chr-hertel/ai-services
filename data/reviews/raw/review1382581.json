@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0114214/" }, "author": { "@type": "Person", "name": "harry_tk_yung" }, "dateCreated": "2006-05-31", "inLanguage": "English", "name": "\"How many ways can you draw a gun\" or \"Preparation for the 2006 World Cup\"" }

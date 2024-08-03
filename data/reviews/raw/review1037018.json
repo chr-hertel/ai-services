@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0071650/" }, "author": { "@type": "Person", "name": "gibbog" }, "dateCreated": "2005-03-10", "inLanguage": "English", "name": "Shocking, but...", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "8" } }

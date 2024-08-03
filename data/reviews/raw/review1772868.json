@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0050873/" }, "author": { "@type": "Person", "name": "bob the moo" }, "dateCreated": "2007-12-01", "inLanguage": "English", "name": "Effective and enjoyable plot and theme driven sci-fi (SPOILERS)" }

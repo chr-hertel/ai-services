@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0162406/" }, "author": { "@type": "Person", "name": "junk-monkey" }, "dateCreated": "2006-08-09", "inLanguage": "English", "name": "Mind-bogglingly unfunny" }

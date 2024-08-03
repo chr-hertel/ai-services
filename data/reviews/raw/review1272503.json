@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0111003/" }, "author": { "@type": "Person", "name": "Backlash007" }, "dateCreated": "2006-01-22", "inLanguage": "English", "name": "\"Are you saying these slugs are using us like puppets?\"" }

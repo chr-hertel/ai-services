@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0387877/" }, "author": { "@type": "Person", "name": "DwayneDibley" }, "dateCreated": "2006-09-16", "inLanguage": "English", "name": "Awful", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "1" } }

@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0144069/" }, "author": { "@type": "Person", "name": "d_milward" }, "dateCreated": "2005-10-17", "inLanguage": "English", "name": "By far the best treatment of Street Fighter in Anime" }

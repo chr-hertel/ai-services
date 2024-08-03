@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0161542/" }, "author": { "@type": "Person", "name": "opaguy" }, "dateCreated": "2006-08-26", "inLanguage": "English", "name": "Misunderstood Work of a Great German Filmmaker" }

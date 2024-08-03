@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stoffel\AzureAi\Command;
 
-use Stoffel\AzureAi\AiVision;
+use Stoffel\AzureAi\CognitiveServices\AiVision;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -36,7 +36,7 @@ final class AiVisionCommand extends Command
 
             $io->text(sprintf('Analyzing image %s ...', $image));
 
-            $response = $this->aiVision->analyze($image, $feature);
+            $response = $this->aiVision->analyzeImage($image, $feature);
 
             $io->newLine();
             $io->comment(sprintf('%s Result:', $feature));
@@ -54,7 +54,7 @@ final class AiVisionCommand extends Command
     private function getImages(): array
     {
         $images = (new Finder())
-            ->in($this->dataPath)
+            ->in(sprintf('%s/images', $this->dataPath))
             ->files()
             ->sortByName()
             ->name('*.jpg');

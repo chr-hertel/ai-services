@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0388419/" }, "author": { "@type": "Person", "name": "hidarimaki" }, "dateCreated": "2005-12-03", "inLanguage": "English", "name": "Ho Ho Hum", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "4" } }

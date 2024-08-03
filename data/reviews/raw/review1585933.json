@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0181821/" }, "author": { "@type": "Person", "name": "Alfabeta" }, "dateCreated": "2007-01-29", "inLanguage": "English", "name": "Sweet dreams in a hopeless country" }

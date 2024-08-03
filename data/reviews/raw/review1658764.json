@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0251736/" }, "author": { "@type": "Person", "name": "Backlash007" }, "dateCreated": "2007-05-20", "inLanguage": "English", "name": "\"Boy, I bet you\u0027d stick your head in the fire if I told ya you could see Hell.\"" }

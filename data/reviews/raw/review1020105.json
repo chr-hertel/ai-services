@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0075082/" }, "author": { "@type": "Person", "name": "harry_tk_yung" }, "dateCreated": "2005-02-13", "inLanguage": "English", "name": "More intriguing than a whodunit even when you already know who\u0027s the murderer" }

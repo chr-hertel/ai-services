@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0363771/" }, "author": { "@type": "Person", "name": "RoDo777" }, "dateCreated": "2006-01-10", "inLanguage": "English", "name": "What a shame ...", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "1" } }

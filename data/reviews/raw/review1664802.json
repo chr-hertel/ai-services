@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0025913/" }, "author": { "@type": "Person", "name": "freshy" }, "dateCreated": "2007-05-29", "inLanguage": "English", "name": "Nothing to see here", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "2" } }

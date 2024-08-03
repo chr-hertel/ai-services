@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0977618/" }, "author": { "@type": "Person", "name": "talegi" }, "dateCreated": "2008-08-02", "inLanguage": "English", "name": "Great cop farce!", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "8" } }

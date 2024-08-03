@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0094226/" }, "author": { "@type": "Person", "name": "arahman" }, "dateCreated": "2005-06-30", "inLanguage": "English", "name": "The Chicago Way", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "7" } }

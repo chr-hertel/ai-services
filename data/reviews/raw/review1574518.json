@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0103982/" }, "author": { "@type": "Person", "name": "fedor8" }, "dateCreated": "2007-01-16", "inLanguage": "English", "name": "Starts well, gets dumb later." }

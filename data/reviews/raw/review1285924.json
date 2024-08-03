@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0394052/" }, "author": { "@type": "Person", "name": "opmanso" }, "dateCreated": "2006-02-07", "inLanguage": "English", "name": "One of the worst episodes" }

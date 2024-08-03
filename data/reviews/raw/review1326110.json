@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0411098/" }, "author": { "@type": "Person", "name": "Nick-242" }, "dateCreated": "2006-03-26", "inLanguage": "English", "name": "Tell me a joke and if you don\u0027t know one, never mind, can\u0027t we just look at the sun?" }

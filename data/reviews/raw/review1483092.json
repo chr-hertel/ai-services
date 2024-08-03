@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0044863/" }, "author": { "@type": "Person", "name": "Cristi_Ciopron" }, "dateCreated": "2006-09-25", "inLanguage": "English", "name": "Sternberg had his gallantry" }
