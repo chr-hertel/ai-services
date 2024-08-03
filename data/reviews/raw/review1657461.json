@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0482088/" }, "author": { "@type": "Person", "name": "harry_tk_yung" }, "dateCreated": "2007-05-17", "inLanguage": "English", "name": "Worth the admission price, barely (this is not a pun)" }

@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0386820/" }, "author": { "@type": "Person", "name": "Chucky_Jr" }, "dateCreated": "2005-10-06", "inLanguage": "English", "name": "Great for children... If your kids are homicidal maniacs." }

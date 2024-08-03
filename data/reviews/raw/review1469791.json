@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0295700/" }, "author": { "@type": "Person", "name": "raypdaley182" }, "dateCreated": "2006-09-08", "inLanguage": "English", "name": "Very weird", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "2" } }

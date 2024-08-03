@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0385004/" }, "author": { "@type": "Person", "name": "fairyonboard" }, "dateCreated": "2005-06-09", "inLanguage": "English", "name": "Fantastic", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "10" } }

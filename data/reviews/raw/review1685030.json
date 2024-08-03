@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt1000255/" }, "author": { "@type": "Person", "name": "Scunner" }, "dateCreated": "2007-07-02", "inLanguage": "English", "name": "Laughably bad." }

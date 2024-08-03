@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt1248537/" }, "author": { "@type": "Person", "name": "citizenchris" }, "dateCreated": "2008-09-22", "inLanguage": "English", "name": "the jumping off point for what could be a decent but formulaic series" }

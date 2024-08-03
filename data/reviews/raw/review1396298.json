@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0800226/" }, "author": { "@type": "Person", "name": "sithvol" }, "dateCreated": "2006-06-18", "inLanguage": "English", "name": "God Awful", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "1" } }

@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0268126/" }, "author": { "@type": "Person", "name": "rxw" }, "dateCreated": "2005-04-04", "inLanguage": "English", "name": "or, a hasty prank I handed in for homework" }

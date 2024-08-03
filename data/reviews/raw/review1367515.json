@@ -1,0 +1,1 @@
+{ "@context": "http://schema.org", "@type": "Review", "itemReviewed": { "@type": "CreativeWork", "url": "https://www.imdb.com/title/tt0082818/" }, "author": { "@type": "Person", "name": "fidelio74" }, "dateCreated": "2006-05-14", "inLanguage": "English", "name": "Gore galore!", "reviewRating": { "@type": "Rating", "worstRating": "1", "bestRating": "10", "ratingValue": "7" } }
